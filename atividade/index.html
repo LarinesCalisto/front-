@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomia - Explorando o Universo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="inicio">
+<nav>
+    <div class="logo">ASTRO<span>NOMIA</span></div>
+
+    <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#historia">Astronomia</a></li>
+        <li><a href="#corpos">Corpos Celestes</a></li>
+    </ul>
+    <button onclick="alternarCorTema()" id="btn-tema" style="margin-top: 0; padding: 10px 20px;">Alternar Cor</button>
+</nav>
+
+        <section class="hero">
+            <div class="hero-text">
+                <p class="subtitulo">EXPLORE O UNIVERSO</p>
+
+                <h1>
+                    ALÉM<br>
+                    DAS <span>ESTRELAS</span>
+                </h1>
+
+                <p>
+                    Descubra os mistérios do espaço, conheça os corpos
+                    celestes e embarque em uma viagem pelo universo.
+                </p>
+
+                <button onclick="explorarUniverso()">
+                    EXPLORAR O UNIVERSO
+                </button>
+            </div>
+
+            <div class="planeta">
+                <div class="anel"></div>
+                <div class="planeta-corpo"></div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+
+        <section id="historia" class="historia">
+
+            <p class="titulo-pequeno">O ESTUDO DO UNIVERSO</p>
+
+            <h2>
+                O que é <span>Astronomia?</span>
+            </h2>
+
+            <div class="linha"></div>
+
+            <p>
+                A astronomia é a ciência que estuda os corpos celestes,
+                como estrelas, planetas, luas, cometas, asteroides e
+                galáxias, além dos fenômenos que acontecem no universo.
+            </p>
+
+            <p>
+                Desde a antiguidade, diferentes povos observavam o céu
+                para compreender os movimentos dos astros, marcar o
+                tempo e desenvolver calendários.
+            </p>
+
+            <p>
+                Com o avanço da ciência e da tecnologia, telescópios e
+                sondas espaciais permitiram observar regiões cada vez
+                mais distantes do universo e ampliar nosso conhecimento
+                sobre o espaço.
+            </p>
+
+            <button onclick="mostrarHistoria()">
+                SABER MAIS
+            </button>
+
+            <p id="textoExtra"></p>
+
+        </section>
+
+
+        <section id="corpos" class="corpos">
+
+            <p class="titulo-pequeno">MARAVILHAS DO COSMOS</p>
+
+            <h2>
+                Corpos <span>Celestes</span>
+            </h2>
+
+            <div class="linha"></div>
+
+            <div class="cards">
+
+                <div class="card sol">
+                    <div class="icone">☀️</div>
+
+                    <h3>SOL</h3>
+
+                    <p class="categoria">
+                        ⭐ ESTRELA
+                    </p>
+
+                    <p>
+                        O Sol é a estrela localizada no centro do
+                        Sistema Solar e é a principal fonte de energia
+                        para a Terra.
+                    </p>
+
+                    <div class="cor">
+                        <span></span>
+                        Amarelo
+                    </div>
+                </div>
+
+
+                <div class="card terra">
+                    <div class="icone">🌎</div>
+
+                    <h3>TERRA</h3>
+
+                    <p class="categoria">
+                        🌍 PLANETA
+                    </p>
+
+                    <p>
+                        A Terra é o terceiro planeta do Sistema Solar
+                        e possui condições conhecidas para a existência
+                        de vida.
+                    </p>
+
+                    <div class="cor">
+                        <span></span>
+                        Azul
+                    </div>
+                </div>
+
+
+                <div class="card lua">
+                    <div class="icone">🌙</div>
+
+                    <h3>LUA</h3>
+
+                    <p class="categoria">
+                        🌕 SATÉLITE NATURAL
+                    </p>
+
+                    <p>
+                        A Lua é o satélite natural da Terra e influencia
+                        fenômenos como as marés dos oceanos.
+                    </p>
+
+                    <div class="cor">
+                        <span></span>
+                        Prata
+                    </div>
+                </div>
+
+
+                <div class="card marte">
+                    <div class="icone">🔴</div>
+
+                    <h3>MARTE</h3>
+
+                    <p class="categoria">
+                        🪐 PLANETA
+                    </p>
+
+                    <p>
+                        Marte é conhecido como o planeta vermelho por
+                        causa da presença de óxidos de ferro em sua
+                        superfície.
+                    </p>
+
+                    <div class="cor">
+                        <span></span>
+                        Vermelho
+                    </div>
+                </div>
+
+
+                <div class="card saturno">
+                    <div class="icone">🪐</div>
+
+                    <h3>SATURNO</h3>
+
+                    <p class="categoria">
+                        🪐 PLANETA
+                    </p>
+
+                    <p>
+                        Saturno é um gigante gasoso famoso por seu
+                        impressionante sistema de anéis.
+                    </p>
+
+                    <div class="cor">
+                        <span></span>
+                        Dourado
+                    </div>
+                </div>
+
+
+                <div class="card galaxia">
+                    <div class="icone">🌌</div>
+
+                    <h3>GALÁXIA</h3>
+
+                    <p class="categoria">
+                        🌌 ESTRUTURA CÓSMICA
+                    </p>
+
+                    <p>
+                        Galáxias são enormes estruturas formadas por
+                        estrelas, gás, poeira e outros componentes
+                        mantidos juntos pela gravidade.
+                    </p>
+
+                    <div class="cor">
+                        <span></span>
+                        Roxo
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="curiosidade">
+
+            <div class="curiosidade-conteudo">
+
+                <p class="titulo-pequeno">VOCÊ SABIA?</p>
+
+                <h2>
+                    O universo é <span>gigantesco.</span>
+                </h2>
+
+                <p id="curiosidadeTexto">
+                    Clique no botão para descobrir uma curiosidade
+                    sobre astronomia.
+                </p>
+
+                <button onclick="novaCuriosidade()">
+                    DESCOBRIR CURIOSIDADE
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section class="frase">
+
+            <p>OLHE PARA O CÉU</p>
+
+            <h2>
+                O UNIVERSO<br>
+                <span>ESTÁ ESPERANDO.</span>
+            </h2>
+
+            <button onclick="mudarTema()">
+                MODO ESPACIAL
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <h2>
+            ASTRO<span>NOMIA</span>
+        </h2>
+
+        <p>
+            Desenvolvido por: Larissa Inês Calisto de Oliveira
+        </p>
+
+        <p>
+            Projeto desenvolvido com HTML5, CSS3 e JavaScript.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
