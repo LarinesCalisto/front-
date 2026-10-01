@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Galeria Animada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Minha Galeria Animada</h1>
+    <p>Escolha uma fotografia:</p>
+
+    <div class="galeria-container">
+        <img id="fotoExibida" class="foto-principal" src="img/mordecai.jpg" alt="Foto da Galeria">
+    </div>
+
+    <div class="navegacao">
+        <button class="botao-foto" onclick="mudarFoto('img/mordecai.jpg', '#0c79df')">Foto 1</button>
+        <button class="botao-foto" onclick="mudarFoto('img/rigby.jpg', '#582c02')">Foto 2</button>
+        <button class="botao-foto" onclick="mudarFoto('img/mer.jpg', '#d3ecb7')">Foto 3</button>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

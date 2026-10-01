@@ -1,0 +1,126 @@
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: -webkit-linear-gradient(left,#A78FC7, #170557);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+
+h1{
+    color: #facc15;
+    font-size:40px;
+    Margin:30px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #380b52;
+
+}
+
+h2{
+    color: #ce99fa;
+    font-size:20px;
+    Margin:30px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #4b0c70;
+
+}
+
+p{
+    color: #2a0fa3;
+    font-size:20px;
+    Margin:30px;
+    
+
+}
+
+.botao-estrela {
+    position: relative;
+    width: 170px;
+    height: 70px;
+    padding: 0 18px;
+    background-color: #380b52;
+    color: #facc15;
+    border: none;
+    border-radius: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, filter 0.2s ease;
+    overflow: visible;
+}
+
+.botao-estrela::before,
+.botao-estrela::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 8px;
+    width: 18px;
+    height: 18px;
+    background: #facc15;
+    clip-path: polygon(50% 0%, 61% 35%, 100% 35%, 68% 57%, 79% 100%, 50% 73%, 21% 100%, 32% 57%, 0% 35%, 39% 35%);
+    box-shadow: 0 0 0 2px rgba(54, 13, 108, 0.15);
+}
+
+.botao-estrela::after {
+    right: -8px;
+    bottom: -18px;
+    width: 20px;
+    height: 20px;
+    transform: scale(0.95);
+}
+
+.botao-estrela::selection {
+    background: transparent;
+}
+
+.botao-estrela:hover {
+    transform: scale(1.03);
+    filter: brightness(1.08);
+}
+
+.botao-estrela + .saturno {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 12px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #d9d4c7, #b6a8d8);
+    box-shadow: inset -5px -5px 0 rgba(94, 70, 133, 0.2);
+}
+
+.botao-estrela + .saturno::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 38px;
+    height: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.7);
+    border-top: 0;
+    border-left: 0;
+    border-radius: 50%;
+}
+
+.botao-estrela + .saturno::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(8deg);
+    width: 38px;
+    height: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-top: 0;
+    border-left: 0;
+    border-radius: 50%;
+}
